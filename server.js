@@ -35,15 +35,13 @@ const server = http.createServer((req, res) => {
 ////////////////// WS LOGIC ///////////////////
 ///////////////////////////////////////////////
 
-// TODO
-// Exercise 3: Create the WebSocket Server using the HTTP server
+// Create the WebSocket Server using the HTTP server
+const wsServer = new WebSocket.Server({ server });
 
-
-// TODO
-// Exercise 5: Respond to connection events 
-  // Exercise 6: Respond to client messages
-  // Exercise 7: Send a message back to the client, echoing the message received
-  // Exercise 8: Broadcast messages received to all other clients
+// Respond to connection events 
+  // Respond to client messages
+  // Send a message back to the client, echoing the message received
+  // Broadcast messages received to all other clients
   
 
 ///////////////////////////////////////////////
@@ -51,8 +49,7 @@ const server = http.createServer((req, res) => {
 ///////////////////////////////////////////////
 
 function broadcast(data, socketToOmit) {
-  // TODO
-  // Exercise 8: Implement the broadcast pattern. Exclude the emitting socket!
+  // Implement the broadcast pattern. Exclude the emitting socket!
 }
 
 // Start the server listening on localhost:8080
