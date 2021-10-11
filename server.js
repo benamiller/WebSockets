@@ -37,6 +37,7 @@ const server = http.createServer((req, res) => {
 
 // Create the WebSocket Server using the HTTP server
 const wsServer = new WebSocket.Server({ server });
+// Just a test
 
 // Respond to connection events 
   // Respond to client messages
